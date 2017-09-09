@@ -5,7 +5,7 @@ import os
 
 # 图片resize
 # srcdir = 'I:\\My Documents\\My Desktop\\rock_samples\\3dpicture_8\\MidView'  # windows下面最好用\\
-srcdir = 'I:\\My Documents\\My Desktop\\rock_samples\\3dpicture_8\\UpView'  # windows下面最好用\\
+srcdir = 'I:\\My Documents\\My Desktop\\rocks\\d'  # windows下面最好用\\
 outdir = os.path.join(srcdir, 'resized')
 if (not (os.path.exists(outdir))):
     os.mkdir(outdir)
