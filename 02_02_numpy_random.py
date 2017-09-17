@@ -16,7 +16,8 @@ bytes(length)	Return random bytes.
 """
 
 print np.random.rand(3, 4)  # 普通随机数float,3x4
-print np.random.randn(10)  # 10个元素的数组，不是1x10
+print np.random.randn(10)  # 10个元素的一维数组，不是1x10的行向量
+assert (np.random.rand(1, 5).shape == (1, 5))  # 这种写法才是行向量
 print np.random.randn(10, 2)  # 10x2的数组
 
 print np.random.random((1, 10))  # 1x 10
