@@ -14,7 +14,6 @@ if match:
 match = re.match('@\\d+', '@123')
 print match.group(0)
 
-
 #  替换
 '''
 sub(repl, string[, count]) | re.sub(pattern, repl, string[, count]):
@@ -35,3 +34,9 @@ def func(m):
 
 
 print p.sub(func, s)
+
+res = re.findall("(12|22)3", "123 223")
+print res  # findall 只显示分组内的结果
+
+res = re.findall("(?:12|22)3", "123 223")
+print res  # 加上?:后采用不捕捉模式就正确了

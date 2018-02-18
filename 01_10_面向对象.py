@@ -102,4 +102,7 @@ counter = JustCounter()
 counter.count()
 counter.count()
 print counter.publicCount
+
+
 print counter.__secretCount  # 报错，实例不能访问私有变量
+print counter._JustCounter__secretCount  # 实际上python没有真正的私有，这样就可以访问了也,变量名字前面加上_classname

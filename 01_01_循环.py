@@ -43,3 +43,4 @@ while var == 1:  # python的while可以接else
 else:
     print 'you entered a odd number'
     print 'good bye'
+

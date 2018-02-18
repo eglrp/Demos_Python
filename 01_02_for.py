@@ -17,3 +17,5 @@ for index in range(len(fruits)):
 for idx, fruit in enumerate(fruits):  # enumerate直接就可以用一个计数变量了
     print '当前是第%d个水果:%s' % (idx, fruit)
 
+fruits1 = [i+i for i in fruits]  # 用来生成一个list  # 列表生成式
+print fruits1
