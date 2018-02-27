@@ -49,7 +49,6 @@ print _list[1:3]  # 输出第二个至第三个的元素
 print _list[2:]  # 输出从第三个开始至列表末尾的所有元素
 print tinylist * 2  # 输出列表两次
 print _list + tinylist  # 打印组合的列表
-exit()
 
 # 元祖例子（元组不能二次赋值，相当于只读列表。）
 _tuple = ('runoob', 786, 2.23, 'john', 70.2)
@@ -67,6 +66,19 @@ _list = ['runoob', 786, 2.23, 'john', 70.2]
 # tuple[2] = 1000    # 元组中是非法应用
 _list[2] = 1000  # 列表中是合法应用
 
+# dict例子
+print '-----------------------------'
+_dict = {1: 2, '3': 4}
+print _dict[1]
+_dict['key1'] = 'key1_value'  # 可以直接没有这个键的时候直接赋值会新增
+print _dict['key1']
+for key in _dict.keys():
+    print key, ':', _dict[key]
+
+for key, value in _dict.items():  # 也可以这样,items是一个list
+    print key, ':', value
+
+exit()
 # 三种不同数组分别用[],(),{}初始化,但是都用[]访问
 
 _dict = {}

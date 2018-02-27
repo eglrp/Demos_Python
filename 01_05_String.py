@@ -104,3 +104,7 @@ def findindexofstr(str1, ch):
 
 b = findindexofstr(str2, 'a')
 print 'indexs are', b
+
+# 拼接iterable里面的内容
+items = ['ab', 'cd', 'sas']
+print ','.join(items)  # ab,cd,sas
